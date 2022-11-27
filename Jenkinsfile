@@ -1,17 +1,17 @@
 pipeline{
     agent any
-    stages{
+    stages {
         stage("Stage One")
-        steps{
+        steps {
             echo "Hello from stage 1"
         }
         stage("Stage Two")
-        steps{
+        steps {
             echo "Hello from stage 2"
         }
         stage("stage Three")
-        steps{
-            sh "git checkout"
+        steps { 
+            echo "Hello from stage 3"
         }
     }
 }
